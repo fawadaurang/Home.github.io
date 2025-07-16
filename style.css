@@ -1,57 +1,63 @@
-/* Base style */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: white;
+  color: #444;
 }
 
-/* Header section */
+/* Horizontal title + menu */
 header {
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px 10px 60px;
+  font-weight: 300;
+  flex-wrap: wrap;
 }
 
-/* Navigation menu */
+header h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  color: #555;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Menu styling */
 nav ul {
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   margin: 0;
+  display: flex;
+  gap: 30px;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #000;
-  font-weight: bold;
+  color: #555;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
 }
 
-/* Main content area */
-main {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
+nav ul li a:hover {
+  color: #0077cc;
 }
 
-main img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Section content (applies to all pages) */
+/* Section styling */
 section {
   padding: 40px;
   max-width: 800px;
-  margin-left: 0;
+  margin-left: auto;
   margin-right: auto;
 }
 
-/* Justified text */
 p, li {
   text-align: justify;
+  line-height: 1.6;
 }
